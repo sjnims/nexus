@@ -34,6 +34,12 @@ bin/rubocop -a       # Auto-fix issues
 bin/brakeman         # Security static analysis
 bin/bundler-audit    # Gem vulnerability check
 bin/importmap audit  # JS dependency audit
+
+# Format non-Ruby files
+npx prettier --write "**/*.{md,json,yml,yaml,js,css,scss}"
+
+# Lint markdown
+npx markdownlint-cli2 "**/*.md" --fix
 ```
 
 ## Full CI Suite

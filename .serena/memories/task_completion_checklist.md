@@ -6,6 +6,8 @@ Run these commands before considering a task complete:
 
 ```bash
 bin/rubocop -a
+npx prettier --write "**/*.{md,json,yml,yaml,js,css,scss}"
+npx markdownlint-cli2 "**/*.md" --fix
 ```
 
 ## 2. Tests (If code changed)
